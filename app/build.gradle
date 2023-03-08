@@ -1,0 +1,122 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
+    id 'dagger.hilt.android.plugin'
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "kr.non.wsayings"
+        minSdkVersion 24
+        targetSdkVersion 29
+        versionCode 3
+        versionName "1.0.2"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+
+        debug{
+            buildConfigField    "int", "TotalNumberOfBackgrouns", "50"
+        }
+
+        release {
+            // https://developer.android.com/studio/build/shrink-code?hl=ko
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            buildConfigField    "int", "TotalNumberOfBackgrouns", "50"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        dataBinding true
+    }
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation "androidx.fragment:fragment-ktx:1.3.0-alpha02"
+    implementation "androidx.activity:activity-ktx:1.2.0-alpha02"
+
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // firebase
+    implementation platform('com.google.firebase:firebase-bom:26.1.0')  // Firebase Android BoM
+    implementation 'com.google.firebase:firebase-database-ktx'
+    compileOnly 'com.google.android.wearable:wearable:2.6.0'
+
+    // navigation
+    def nav_version = "2.2.2"
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    // hilt
+    def hilt_version = "2.28-alpha"
+    def hilt_view_model_version = "1.0.0-alpha01"
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
+    implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hilt_view_model_version"
+    kapt "androidx.hilt:hilt-compiler:$hilt_view_model_version"
+
+    // room
+    def room_version = "2.2.5"
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+
+    // glide (https://github.com/bumptech/glide)
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    // play core (Google Play 스토어와 연결하는 앱의 런타임 인터페이스)
+    implementation 'com.google.android.play:core:1.8.3'
+    implementation 'com.google.android.play:core-ktx:1.8.1'
+
+    // Google AdMob
+    implementation 'com.google.android.gms:play-services-ads:19.7.0'
+
+    // EncryptedSharedPreferences
+    implementation 'androidx.security:security-crypto:1.1.0-alpha03'
+
+    // 카카오톡 (https://developers.kakao.com/docs/latest/ko/message/android#link-send)
+    implementation "com.kakao.sdk:v2-link:2.0.6"
+
+    // lottie
+    def lottie_version = "3.5.0"
+    implementation "com.airbnb.android:lottie:$lottie_version"
+
+    // material-dialogs
+    implementation 'com.afollestad.material-dialogs:core:3.3.0'
+
+    // ViewPager2
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+
+    // Google Material Design
+    implementation 'com.google.android.material:material:1.2.1'
+
+
+}

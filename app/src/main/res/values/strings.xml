@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">명언세끼</string>
+    <string name="appwidget_text">Wise Sayings</string>
+    <string name="add_widget">Add widget</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+
+    <string name="save_ws_success">오늘의 명언이 저장되었습니다.</string>
+
+
+    <!-- common -->
+    <string name="common_version_name">App ver. %s</string>
+    <string name="common_recommend_title">추천해주세요</string>
+    <string name="common_recommend_message">주변 친구들에게\n좋은 글귀를 나눠주세요.</string>
+    <string name="common_sponsor_title">후원해주세요</string>
+    <string name="common_sponsor_message">더 좋은 서비스를 위해\n최소한의 운영비가 필요합니다.\n운영자에게 힘이 되어주세요.</string>
+    <string name="common_contest_message"><![CDATA[<b>내가 작성한 명언</b>이 당선되어<br/>모두가 볼 수 있다면?]]></string>
+    <string name="common_contest_limit">최근 24시간 내 참여 횟수는 1회로 제한됩니다.</string>
+    <string name="common_contest_upload_completed">내 명언이 등록되었습니다.</string>
+
+    <string name="common_today_user_sayings"></string>
+    <string name="common_example_user_sayings">세끼 다 먹으면 살쪄요</string>
+    <string name="common_example_user_name">\&apos;다이어트 천재\&apos;</string>
+
+    <!-- dialog -->
+    <string name="dialog_button_ok">확인</string>
+
+    <string name="dialog_title_common">알림</string>
+    <string name="dialog_msg_err_validity">명언과 작성자를 입력해주세요.</string>
+    <string name="dialog_msg_err_network">네트워크 연결이 필요합니다.</string>
+
+
+    <!-- tabs -->
+    <string name="tab_today_sayings">오늘의 명언</string>
+    <string name="tab_user_contest">명언 공모전</string>
+    <string name="tab_my_favorite">좋아요</string>
+    <string name="title_sponsor">후원해주세요</string>
+
+
+    <!-- buttons -->
+    <string name="button_save">저장하기</string>
+    <string name="button_share">공유하기</string>
+    <string name="button_save_detail"><![CDATA[<b>내 사진첩</b>에<br/>명언 이미지를]]></string>
+    <string name="button_share_text_detail"><![CDATA[명언 <b>글귀</b>만]]></string>
+    <string name="button_share_image_detail"><![CDATA[<b>이미지</b> 포함한<br/>명언]]></string>
+
+    <string name="button_recommend">앱 추천하기</string>
+    <string name="button_play_ad">광고보기</string>
+    <string name="button_contest">공모전 참여하기</string>
+    <string name="button_preview">미리보기</string>
+    <string name="button_registration">등록하기</string>
+    <string name="button_go_home">홈으로</string>
+
+    <!-- hint -->
+    <string name="hint_message">명언 작성</string>
+    <string name="hint_writer">글쓴이</string>
+
+    <!-- sponsor -->
+    <string name="sponsor_no_ad_message_1">하하; 쑥쓰럽슴돠\n이번엔 마음만 받을게요 ^^;</string>
+    <string name="sponsor_no_ad_message_2">오늘 후원 광고가 마감되었습니다.\n항상 감사합니다.</string>
+    <string name="sponsor_no_ad_message_3"><![CDATA[-&nbsp;<b>&#39;명언세끼&#39;</b>일동&nbsp;-]]></string>
+    <string name="sponsor_load_ad_message_1">웨이럽 미닛~</string>
+    <string name="sponsor_load_ad_message_2">광고 불러오기 중...\n잠시만 기다려주세요.</string>
+
+    <!-- notice -->
+    <string name="notice_update_time">명언은 하루에 3번 업데이트 됩니다.</string>
+    <string name="notice_sponsor">주변 친구들에게 우리 앱을 추천해주세요.</string>
+
+    <string name="notice_contest_challenge">여러분의 재치있는 명언을 기대합니다.</string>
+    <string name="notice_contest_wednesday">여러분의 명언도 표시되도록 준비하겠습니다.</string>
+    <string name="notice_contest_limit">참여는 최근 24시간 이내 1회로 제한됩니다.</string>
+    <string name="notice_contest_not_difficult">거창한(?) 공모전이 아닙니다. 부담 없이 ^^</string>
+    <string name="notice_contest_your_power">당신도 누군가에게 힘이되는 사람입니다.</string>
+
+    <string name="notice_contest_rule">명언은 최대 30자(3줄)까지 작성가능합니다.</string>
+
+
+</resources>
